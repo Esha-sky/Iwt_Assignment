@@ -1,0 +1,39 @@
+<html>
+ <head>
+ <title>Question 29 week 4</title>
+
+
+<script>
+
+    var font = 0, loading;
+    function start()
+    {
+        loading = window.setInterval("incr()", 100);
+    }
+
+    function incrase() {
+        font = font + 1;
+        display.innerHTML = "TEXT IS GROWING" ;
+        display.style.fontSize = font + "pt";
+        if (font > 50) {
+            window.clearTimeout(loading);
+            loading = window.setInterval("decrease()", 100);
+        }
+        display.style.color = "pink";
+    }
+    function decrease() {
+        font = font - 1;
+        display.innerHTML = "TEXT IS SHRINKING";
+        display.style.fontSize = font + "pt";
+        if (font == 5) {
+            window.clearTimeout(loading);
+            loading = window.setInterval("increase()", 100);
+        }
+        display.style.color = "yellow";
+    }
+ </script>
+ </head>
+ <body style="background: #000000;" onload="start()" >
+ <center><p style="margin-top:250px" id="display"></p></center>
+ </body>
+ </html>

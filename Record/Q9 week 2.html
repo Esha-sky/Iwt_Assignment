@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> HTML Forms</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td colspan="2" align="center"><h1>Registration Page</h1></td>
+            </tr>
+            <tr>
+                <td><label> Name: </label></td>
+                <td><input type="text" name="username" size="20" placeholder="Enter username"/><br></td>
+            </tr>
+            <tr>
+                <td><label> Password: </label></td>
+                <td><input type="password" name="password" placeholder="Enter password"/><br></td>
+            </tr>
+            <tr>
+                <td><label> Gender: </label></td>
+                <td><input type="radio" name="gender" value="m"/>
+                <label> Male </label></td>
+                <td><input type="radio" name="gender" value="f"/>
+                <label> Female </label><br></td>
+            </tr>
+            <tr>
+                <td><label> Hobbies: </label></td>
+                <td><input type="checkbox" name="hobbies" value="singing"/>
+                <label> Singing </label></td>
+            
+           
+                <td><input type="checkbox" name="hobbies" value="dancing"/>
+                    <label> Dancing </label></td>
+            
+            
+                <td><input type="checkbox" name="hobbies" value="Performing"/>
+                    <label> Performing </label><br>
+                    </td>
+            </tr>
+            <tr>
+                <td><label> Class: </label></td>
+                <td><select name="class" multiple>
+                    <option value="default">Choose an option</option>
+                    <option value="btit"> B.Tech(IT)</option>
+                    <option value="btcs"> B.Tech(CS)</option>
+                    <option value="btece"> B.Tech(ECE)</option>
+                </select><br></td>
+                    
+            </tr>
+            <tr>
+                 <td><label> Comments: </label></td>
+                 <td><textarea rows="2" cols="10" name="comments" placeholder="enter"></textarea><br>
+                    <input type="reset"/>      <!--to reset-->
+                    <input type="submit" value="Click Here!!"/>
+                </td>
+            
+            </tr>
+        </table>
+     
+        <h1>Registration Page</h1>
+        <form method="get" action="profile.html" autocomplete="on">
+            <!--Text-->
+            <label> Name: </label>
+            <input type="text" name="username" size="20" placeholder="Enter username"/><br>
+            <label> Password: </label>
+            <input type="password" name="password" placeholder="Enter password"/><br>
+            <label> Gender: </label>
+
+            <!--Radio--  single selection-->
+            <input type="radio" name="gender" value="m"/>
+            <label> Male </label>
+            <input type="radio" name="gender" value="f"/>
+            <label> Female </label><br>
+
+            <!--checkbox--  multiple selection-->
+            <label> Hobbies: </label>
+            <input type="checkbox" name="hobbies" value="singing"/>
+            <label> Singing </label>
+            <input type="checkbox" name="hobbies" value="dancing"/>
+            <label> Dancing </label>
+            <input type="checkbox" name="hobbies" value="Performing"/>
+            <label> Performing </label><br>
+            
+            <!--dropdown-->
+            <label> Class: </label>
+            <select name="class" multiple>
+                <option value="default">Choose an option</option>
+                <option value="btit"> B.Tech(IT)</option>
+                <option value="btcs"> B.Tech(CS)</option>
+                <option value="btece"> B.Tech(ECE)</option>
+            </select><br>
+
+            <!--Comment-->
+            <label> Comments: </label>
+            <textarea rows="2" cols="10" name="comments" placeholder="enter"></textarea><br>
+            <input type="reset"/>      <!--to reset-->
+            <input type="submit" value="Click Here!!"/>
+        
+        </form>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Q28 week4</title>
+    </head>
+    <body>
+        <button onclick = "displayText()"> Click here! </button>
+        <script>
+            function displayText(){
+                name = prompt("Enter your name");
+                d = new Date();
+                hr = d.getHours();
+                if(hr <= 12)
+                greet = 'A very Good Morning'
+                else if(hr < 16)
+                greet = 'hey Good Afternoon'
+                else
+                greet = 'Good Evening'
+                document.write(greet + " " + name + ":)");
+            }
+</script>
+</body>
+</html>

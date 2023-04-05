@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Question 26(week 3)</title>
+    </head>
+    <body>
+        <div id = "timer">
+        </div>
+        <br>
+        <button onclick = "x = setInterval(startTimer,1000)"> Start </button>
+        <button onclick = "clearInterval(x)"> Stop </button>
+        <script>
+            block = document.getElementById("timer");
+            count = 0;
+            function startTimer(){
+                count = count + 1;
+                block.innerHTML = count;
+            }
+        </script>
+    </body>
+</html>

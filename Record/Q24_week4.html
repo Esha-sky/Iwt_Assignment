@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title> Question 24(week 3) </title>
+</head>
+<body>
+    <form method="get">
+        <input type="number" name='input'>
+        <select>
+        <option value ='c'> Celsius </option>
+        <option value ='k'> Kelvin </option>
+        <option value ='f'> Fahrenheit </option>
+        </select>
+
+        <input type="text" name='output'>
+        <select>
+        <option value ='c'> Celsius </option>
+        <option value ='k'> Kelvin </option>
+        <option value ='f'> Fahrenheit </option>
+        </select>
+    </form>
+    <br>
+    <button onclick="tempConversion()"> Click to convert </button>
+    </br>
+    <script>
+        function tempConversion()
+        {
+            input = parseFloat(document.forms[0].elements[0].value);
+            inpOut = document.forms[0].elements[1].value;
+            outInput = document.forms[0].elements[3].value;
+            if( inp == 'c' && out == 'k' )
+            {
+                result = input+273;
+            }
+            else if( inp == 'c' && out == 'f' )
+            {
+                result = ( input*((9/5)+32) );
+            }
+            else if( inp == 'f' && out == 'k' )
+            {
+                result = (input-32*(5/9)) + 273;
+            }
+            else{
+                result = input;
+            }
+            document.forms[0].elements[2].value = result;
+        }
+    </script>
+</body>
+</html>

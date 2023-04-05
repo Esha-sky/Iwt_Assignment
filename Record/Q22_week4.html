@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Question 22(Week 3)</title>
+    <style>
+           .inner1{
+               height:100px;
+               width:100px;
+               background-color: black;  
+           }
+           .inner1 :hover{
+               background-color: crimson;
+               font-size:30px;
+           
+           }
+           .inner2 :hover{
+               background-color: crimson;
+               font-size:30px;
+           }
+           .inner2{
+               height:100px;
+               width:100px;
+               background-color:white;
+           }
+           .container{
+               display:flex;
+           }
+     </style>
+</head>
+<body>
+    <script type="text/javascript" >
+        row = prompt("Enter the number for rows");
+        col = prompt("Enter the number for columns");
+         
+          
+        for(i=0;i<row;i++)
+        {
+            document.write("<div class='container'>");
+                for(j=0;j<col;j++)
+                {   
+                    if((i+j)%2==0){
+                        document.write("<div class='inner1'>"+j+"</div>");
+                    }
+                    else
+                    document.write("<div class='inner2'>"+j+"</div>");
+                }   
+            document.write("</div>"); 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Question 27(week 3)</title>
+        <style>
+            *{
+                background: black;
+            }
+            #clock{
+                position:absolute;
+                left:35%;
+                top:25%;
+                height:200px;
+                width:257px;
+                border-radius: 60%;
+                text-align:center;
+                color: white;
+                background-color: deeppink;
+                display:flex;
+                font-size: 70px;
+                align-items:center;
+                padding: 50px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="clock">
+
+        </div>
+        <script>
+            function clock(){
+                d = new Date();
+                hr = d.getHours();
+                min = d.getMinutes();
+                ss = d.getSeconds();
+                clockTime = hr + ":" + min + ":" + ss;
+                x = document.getElementById("clock");
+                x.innerHTML = clockTime;
+            }
+            setInterval(clock,1000);
+            </script>
+    </body>
+</html>
